@@ -1,24 +1,2 @@
-# bookstore
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 电子书城前端（Vue 版本）
+[BookStore-Frontend](https://github.com/Okabe-Rintarou-0/BookStore-Frontend) 的 Vue 版本。仅供参考，课程以 React 为主。

@@ -5,3 +5,11 @@
 ```bash
 yarn install && yarn start
 ```
+
+# TODO-List
+
++ [x] Login Page
++ [x] Home Page
++ [ ] Cart Page
++ [ ] Order Page
++ [ ] Book Page  

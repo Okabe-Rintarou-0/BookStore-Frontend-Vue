@@ -1,8 +1,7 @@
 <template>
     <context-holder />
     <BasicLayout>
-        <Row align="middle" justify="end" :style="containerStyle">
-            <Col span="7">
+        <div :style="containerStyle">
             <Card class="login-form-container" :bordered="false">
                 <Space direction="vertical" align="center" :style="{ width: '100%' }">
                     <Space size="large" :style="{ width: '100%' }">
@@ -38,8 +37,7 @@
                     </FormItem>
                 </Form>
             </Card>
-            </Col>
-        </Row>
+        </div>
     </BasicLayout>
 </template>
 
@@ -59,7 +57,9 @@ const containerStyle = {
     padding: '80px',
     height: '80vh',
     backgroundSize: '80vh',
-    backgroundImage: "url('login.png')"
+    backgroundImage: "url('login.png')",
+    display: 'flex',
+    alignItems: 'center'
 };
 const formState = reactive({
     username: '',
@@ -79,5 +79,7 @@ const handleFinish = async () => {
 <style scoped>
 .login-form-container {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 394px;
+    margin-left: auto;
 }
 </style>

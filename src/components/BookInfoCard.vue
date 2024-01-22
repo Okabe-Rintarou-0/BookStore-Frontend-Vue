@@ -1,7 +1,7 @@
 <template>
     <context-holder />
     <Card :style="{ margin: '20px' }">
-        <Space direction="vertical">
+        <Space direction="vertical" :style="{ width: '100%' }">
             <BookDetails :book="book" @addCartItem="handleAddCartItem" />
             <div :style="{ margin: '20px' }">
                 <Divider>书籍评论</Divider>

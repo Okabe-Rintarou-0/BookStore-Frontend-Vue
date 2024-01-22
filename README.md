@@ -11,5 +11,6 @@ yarn install && yarn start
 + [x] Login Page
 + [x] Home Page
 + [x] Cart Page
-+ [ ] Order Page
++ [x] Order Page
 + [x] Book Page
++ [ ] Rank Page

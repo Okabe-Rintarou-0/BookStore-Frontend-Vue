@@ -4,7 +4,7 @@
             <Space direction="vertical" size="large" :style="{ width: '100%' }">
                 <InputSearch placeholder="输入关键字" @search="handleSearch" enterButton size="large" />
                 <BookList :books="books" :page-size="pageSize" :total="total" :current="pageIndex + 1"
-                    :on-page-change="handlePageChange" />
+                    @page-change="handlePageChange" />
             </Space>
         </Card>
     </PrivateLayout>
@@ -40,8 +40,9 @@ loadBooks();
 const handlePageChange = (page) => {
     router.push({
         path: '/', query: {
-            ...router.currentRoute.query,
-            pageIndex: page - 1
+            keyword: keyword.value,
+            pageIndex: page - 1,
+            pageSize: pageSize.value
         }
     });
 }
@@ -49,9 +50,9 @@ const handlePageChange = (page) => {
 const handleSearch = (keyword) => {
     router.push({
         path: '/', query: {
-            ...router.currentRoute.query,
+            keyword,
             pageIndex: 0,
-            keyword
+            pageSize: pageSize.value,
         }
     });
 }

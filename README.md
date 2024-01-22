@@ -12,4 +12,4 @@ yarn install && yarn start
 + [x] Home Page
 + [x] Cart Page
 + [ ] Order Page
-+ [ ] Book Page  
++ [x] Book Page

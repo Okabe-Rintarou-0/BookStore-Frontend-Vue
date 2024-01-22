@@ -10,6 +10,6 @@ yarn install && yarn start
 
 + [x] Login Page
 + [x] Home Page
-+ [ ] Cart Page
++ [x] Cart Page
 + [ ] Order Page
 + [ ] Book Page  

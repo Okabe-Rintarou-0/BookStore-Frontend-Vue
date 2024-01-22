@@ -7,6 +7,7 @@ import LoginPage from './page/LoginPage.vue';
 import BookPage from './page/BookPage.vue';
 import CartPage from './page/CartPage.vue';
 import OrderPage from './page/OrderPage.vue';
+import RankPage from './page/RankPage.vue';
 import ApiPage from './page/ApiPage.vue';
 import { createRouter, createWebHistory } from 'vue-router';
 const router = createRouter({
@@ -16,6 +17,7 @@ const router = createRouter({
         { path: '/login', component: LoginPage },
         { path: '/cart', component: CartPage },
         { path: '/order', component: OrderPage },
+        { path: '/rank', component: RankPage },
         { path: '/book/:id', component: BookPage },
         { path: '/api-docs', component: ApiPage },
         { path: '/:catchAll(.*)', redirect: '/' },
